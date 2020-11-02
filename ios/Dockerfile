@@ -17,6 +17,7 @@ RUN mkdir -p /vialer/ && \
     wget https://github.com/VoIPGRID/Vialer-pjsip-iOS/archive/3.4.1.zip && \
     wget https://github.com/VoIPGRID/Vialer-pjsip-iOS/blob/3.4.1/VialerPJSIP.framework/Versions/A/VialerPJSIP?raw=true && \
     unzip 3.4.1.zip
+    
 
 RUN mkdir -p /dist/ios/VialerPJSIP.framework && \
     mv /vialer/Vialer-pjsip-iOS-3.4.1/VialerPJSIP.framework/Versions/Current/* /dist/ios/VialerPJSIP.framework && \
